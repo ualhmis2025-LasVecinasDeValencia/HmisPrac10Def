@@ -69,7 +69,7 @@ public class RegistroIncorrectoSinNombreDeUsuarioTest {
     driver.findElement(By.cssSelector("vaadin-button")).click();
 
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("vaadin-notification-card")));
-    assertThat(driver.findElement(By.cssSelector("vaadin-notification-card")).getText(), is("Debe rellenar usuario y contraseña"));
+    assertThat(driver.findElement(By.cssSelector("vaadin-notification-card")).getText(), is("Debe rellenar usuario y contrase\u00F1a"));
   }
 }
 

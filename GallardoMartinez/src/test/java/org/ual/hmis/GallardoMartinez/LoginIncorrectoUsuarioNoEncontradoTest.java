@@ -94,6 +94,6 @@ public class LoginIncorrectoUsuarioNoEncontradoTest {
             By.cssSelector("vaadin-notification-card")));
     
     // 8 | assertText | css=vaadin-notification-card | Usuario no encontrado o contraseña incorrecta
-    assertThat(driver.findElement(By.cssSelector("vaadin-notification-card")).getText(), is("Usuario no encontrado o contraseña incorrecta"));
+    assertThat(driver.findElement(By.cssSelector("vaadin-notification-card")).getText(), is("Usuario no encontrado o contrase\u00F1a incorrecta"));
   }
 }

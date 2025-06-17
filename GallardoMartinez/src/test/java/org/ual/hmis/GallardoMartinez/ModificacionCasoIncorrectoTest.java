@@ -78,7 +78,7 @@ public class ModificacionCasoIncorrectoTest {
     driver.findElement(By.cssSelector("vaadin-button:nth-child(2)")).click();
 
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("vaadin-notification-card")));
-    assertThat(driver.findElement(By.cssSelector("vaadin-notification-card")).getText(), is("Fallo en la validación. Revisa los campos."));
+    assertThat(driver.findElement(By.cssSelector("vaadin-notification-card")).getText(), is("Fallo en la validaci\u00F3n. Revisa los campos."));
   }
 }
 

@@ -70,17 +70,17 @@ public class LoginIncorrectoContraseaIncorrectaTest {
       wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("vaadin-button:nth-child(2)")));
       driver.findElement(By.cssSelector("vaadin-button:nth-child(2)")).click();
 
-      // Esperar visibilidad de la notificación de error
+      // Esperar visibilidad de la notificaciÃ³n de error
       WebElement notificacion = wait.until(ExpectedConditions.visibilityOfElementLocated(
           By.cssSelector("vaadin-notification-card")));
 
-      assertThat(notificacion.getText(), is("Usuario no encontrado o contraseña incorrecta"));
+      assertThat(notificacion.getText(), is("Usuario no encontrado o contrase\u00F1a incorrecta"));
 
     } catch (Exception e) {
-      System.out.println("⚠️ Error durante la prueba de login incorrecto:");
+      System.out.println("âš ï¸� Error durante la prueba de login incorrecto:");
       e.printStackTrace();
       System.out.println("URL actual: " + driver.getCurrentUrl());
-      System.out.println("HTML de la página:");
+      System.out.println("HTML de la pÃ¡gina:");
       System.out.println(driver.getPageSource());
       fail("Test fallido: " + e.getMessage());
     }

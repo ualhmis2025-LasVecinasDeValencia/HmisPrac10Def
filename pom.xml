@@ -6,6 +6,7 @@
   <name>seleniumWebDriver</name>
 
 <build>
+<testSourceDirectory>GallardoMartinez/src/test/java</testSourceDirectory>
 
 		<plugins>
 			<plugin>

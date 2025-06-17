@@ -98,10 +98,5 @@ public class AadirUsuarioCorrectoTest {
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("vaadin-notification-card")));
     assertThat(driver.findElement(By.cssSelector("vaadin-notification-card")).getText(), is("Datos actualizados"));
 
-    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("vaadin-grid-cell-content:nth-child(186)")));
-    driver.findElement(By.cssSelector("vaadin-grid-cell-content:nth-child(186)")).click();
-
-    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("vaadin-button:nth-child(3)")));
-    driver.findElement(By.cssSelector("vaadin-button:nth-child(3)")).click();
   }
 }
